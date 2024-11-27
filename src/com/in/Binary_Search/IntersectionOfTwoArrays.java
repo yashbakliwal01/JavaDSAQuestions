@@ -1,4 +1,5 @@
-package com.in.searching;
+//350: https://leetcode.com/problems/intersection-of-two-arrays-ii/description/
+package com.in.Binary_Search;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,8 +8,6 @@ import java.util.List;
 public class IntersectionOfTwoArrays {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		int[] nums1 = {1,2,2,1};
 		int[] nums2 = {2,2};
 		
@@ -25,7 +24,7 @@ public class IntersectionOfTwoArrays {
 
 		Arrays.sort(nums1);
 		Arrays.sort(nums2);
-		//int res = 0;
+
 		List<Integer> list = new ArrayList<>();
 		int i=0; int j=0;
 		

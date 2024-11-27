@@ -1,8 +1,10 @@
-package com.in.excel;
+//1310: https://leetcode.com/problems/xor-queries-of-a-subarray/description/
+
+package com.in.BitManipulation;
 
 import java.util.Arrays;
 
-public class Solution {
+public class XORQueriesOfSubArray {
 
     public int[] xorQueries(int[] arr, int[][] queries) {
         // Build prefix XOR array
@@ -25,11 +27,11 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        XORQueriesOfSubArray xORQueriesOfSubArray = new XORQueriesOfSubArray();
         int[] arr = {1,3,4,8};
         int[][] queries = {{0,1}, {1,2},{0,3},{3,3}};
 
-        int[] result = solution.xorQueries(arr, queries);
+        int[] result = xORQueriesOfSubArray.xorQueries(arr, queries);
 
         System.out.println("XOR results for each query: " + Arrays.toString(result));
     }

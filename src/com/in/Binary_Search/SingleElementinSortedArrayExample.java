@@ -1,4 +1,5 @@
-package com.in.searching;
+//540: https://leetcode.com/problems/single-element-in-a-sorted-array/description/
+package com.in.Binary_Search;
 
 public class SingleElementinSortedArrayExample {
 

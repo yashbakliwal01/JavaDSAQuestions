@@ -1,4 +1,5 @@
-package com.in.searching;
+//69: https://leetcode.com/problems/sqrtx/description/
+package com.in.Binary_Search;
 
 import java.util.Scanner;
 
