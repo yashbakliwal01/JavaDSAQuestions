@@ -1,5 +1,6 @@
 package com.in.Recursion;
 
+// 342: https://leetcode.com/problems/power-of-four/
 import java.util.Scanner;
 
 public class PowerOfFour {
