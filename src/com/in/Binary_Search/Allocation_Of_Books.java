@@ -22,10 +22,10 @@ public class Allocation_Of_Books {
         int ans=-1;
         while(low<=high){
             int mid = (low+high)>>>1;//(low+high)/2;
-            if(isValid(A,B,mid)){
+            if(isValid(A,B,mid)){//TRUE CASE
                 ans = mid;
                 high = mid-1;
-            }else{
+            }else{//FALSE CASE
                 low = mid+1; 
             }
         }
@@ -35,10 +35,10 @@ public class Allocation_Of_Books {
     public static boolean isValid(ArrayList<Integer> A, int B, int x){
         int sum = 0; 
         int i = 0; 
-        int student =1;
+        int student = 1;
+        
         while(i<A.size()){
-            
-            if(sum + A.get(i)>x){
+            if(sum + A.get(i) > x){
                 student++;
                 sum = A.get(i);
                 if(student>B){
@@ -49,7 +49,9 @@ public class Allocation_Of_Books {
             }
             i++;
         }
+        
         return true;
+        
     }
     
     public static void main(String[] args){
