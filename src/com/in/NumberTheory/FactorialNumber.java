@@ -13,18 +13,16 @@ public class FactorialNumber {
 	}
 
 	private static int factorial(int num) {
-
-
 		int fact =1;
 		int i=1;
-		while(fact<=num) {
+		while(i<=num) {
 			fact *=i;
 			i++;
 			if(fact == num) {
 				return 1;
 			}
 		}
-		return 0;
+		return fact;
 	}
 
 }
