@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Allocation_Of_Books {
     public static int books(ArrayList<Integer> A, int B) {
-        
+        //A = {12, 34, 67, 90}, B = 2
         if(B>A.size()){
             return -1;
         }
@@ -36,7 +36,7 @@ public class Allocation_Of_Books {
         int sum = 0; 
         int i = 0; 
         int student = 1;
-        
+      //A = {12, 34, 67, 90}, B = 2
         while(i<A.size()){
             if(sum + A.get(i) > x){
                 student++;
